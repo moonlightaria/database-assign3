@@ -1,0 +1,26 @@
+video:
+https://youtu.be/SyXthMXaLb4
+note issue with low volume, couldn't be bothered to figure out why just blast your speakers
+
+setup:
+used system python version 3.11
+install psycopg2 into your python environment
+pip3 install psycopg2
+check the conn object (line 50) and enter the correct information to establish the database connection
+
+usage:
+python3 main.py [mode] [args]
+
+modes:
+init: initializes the table and adds the data
+
+fetch: Retrieves and displays all records from the students table
+
+insert: args [first name] [last name] [email] [date], date format day-month-year as number
+Inserts a new student record into the students table.
+
+update: args [student_id] [email]
+Updates the email address for a student with the specified student_id.
+
+delete: args [student_id]
+Deletes the record of the student with the specified student_id.
